@@ -1,17 +1,18 @@
 ﻿@page "/"
 
 <SfChart Title="Olympic Medals">
-    <ChartSeriesCollection>
-        <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category" Title="Country">
+     <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category" Title="Country">
         </ChartPrimaryXAxis>
         <ChartPrimaryYAxis Title="Medals Count"></ChartPrimaryYAxis>
+    <ChartSeriesCollection>
         <ChartSeries DataSource="@ChartData" XName="Country" YName="Gold" Type="ChartSeriesType.Column"
                      Name="Gold">
         </ChartSeries>
         <ChartSeries DataSource="@ChartData" XName="Country" YName="Silver" Type="ChartSeriesType.Column"
                      Name="Silver">
         </ChartSeries>
-        <ChartTooltipSettings Enable="true">
+    </ChartSeriesCollection>
+            <ChartTooltipSettings Enable="true">
             <Template>
                 @{
                     var data = context as ChartTooltipInfo;
@@ -30,7 +31,6 @@
 
         </ChartTooltipSettings>
         @* <ChartTooltipSettings Enable="true" Header="Medals" Format="<b>${series.name} : ${point.y}</b>"></ChartTooltipSettings>*@
-    </ChartSeriesCollection>
 </SfChart>
 
 @code {
