@@ -48,10 +48,6 @@ dotnet run
 
 4. Open the local application URL displayed after the application starts.
 
-## Project Structure
-
-- `Client/Pages/` — contains the Razor page implementing tooltip rendering, tooltip templates, and chart interaction scenarios.
-
 ## Support and Feedback
 
 - For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
