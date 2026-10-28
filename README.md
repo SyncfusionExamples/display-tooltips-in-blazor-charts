@@ -15,7 +15,7 @@ The sample demonstrates tooltip content formatting using HTML, custom tooltip te
 - Shows how tooltip appearance can be customized beyond the default presentation.
 - Demonstrates tooltip border customization for improved visual styling.
 - Uses Syncfusion Chart tooltip functionality to provide contextual information about chart data.
-- Implements tooltip examples inside a hosted Blazor application with Client, Server, and Shared projects.
+- Implements tooltip examples in a standalone Blazor WebAssembly application targeting .NET 10.
 - Supports chart interaction scenarios where users need detailed information without permanently displaying data labels.
 
 ## Prerequisites
